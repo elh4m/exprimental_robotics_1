@@ -76,9 +76,7 @@ https://user-images.githubusercontent.com/61094879/142734090-305dbd75-fc06-49ff-
 
 ## Code Documentation:
 
-The code documentation is done using tools Doxygen and Sphinx. In the **main** branch the doxygen documentation can be found and for sphinx there is second branch in this respository named **sphinx**. 
-
-
+The code documentation is done using tools Doxygen  In the **main** branch the doxygen documentation can be found under the name of dconfig.
 ## Contant Info: 
 1. Author: ELham Mohammadi
 2. Email: Elham.mohammadi20154@gmail.com
