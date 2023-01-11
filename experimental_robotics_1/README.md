@@ -36,6 +36,10 @@ roscore&
 2. After that start the ARMOR service by using the following command:
 ```
 rosrun armor execute it.emarolab.armor.ARMORMainService
+if this command does not work or it is the first time you are using ARMOR please first run :
+roscd armor
+./gradlew deployApp
+it will not throw an error this time
 ```
 3. Open the new tab in command terminal and run the ROS package launch file to start the simulation by using the following command: 
 ```
@@ -55,9 +59,8 @@ The project architecture is consist of four python nodes.
 ![experimental_robotics_assignment1](https://user-images.githubusercontent.com/61094879/142053996-5c6eaebb-67bb-4f27-918d-5f2c659b772f.jpg)
 
 'user_interface.py' node communicates with the user and as per the provided commands, instruct the system to behave accordingly. If the user press 1 in the terminal, it request '/user interface' service which is hosted by 'motion_controller.py' node to start the robot simuation. Upon recieving the service request, motion_controller node starts the robot simulation in which robot visits Room1, Room2, and Room3 which have pre-defined coordinates(R1(2,0), R2(0,2), R3(-2,0)) in a X-Y axes grid. The robot starts the exploration from a predefined initial position P with coordinates (1,1).
-![142056609-ae997ab8-51cd-473c-baa9-7c9dc5c5c6d1](https://user-images.githubusercontent.com/77781922/211923586-cc0ac81a-603d-44f1-a2ba-558c5c43dd69.jpg)
 
-
+![environment](https://user-images.githubusercontent.com/61094879/142056609-ae997ab8-51cd-473c-baa9-7c9dc5c5c6d1.jpg)
 
 
 After reaching in any room the robot request for the hint from the hint_generator node by calling the '/request_hint' service. The hint_generator node respond to this request by generating a random hint from predefined lists of hints.
@@ -73,7 +76,7 @@ The oracle node itself used the '/armor_interface_srv' sevice which is hosted by
 
 ## Project Simulation Demo:
 
-https://user-images.githubusercontent.com/61094879/142734090-305dbd75-fc06-49ff-b726-deb3692156a3.mp4
+https://user-images.githubusercontent.com/77781922/211923218-f37aa19b-6057-4bce-9ea4-b1fd14927915.MOV
 
 ## Code Documentation:
 
