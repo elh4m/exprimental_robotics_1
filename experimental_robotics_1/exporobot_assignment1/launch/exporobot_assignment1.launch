@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<launch>
+
+    <node pkg="exporobot_assignment1" type="hint_generator.py" name="hint_generator" />
+    <node pkg="exporobot_assignment1" type="oracle.py" name="oracle" />
+    <node pkg="exporobot_assignment1" type="motion_controller.py" name="motion_controller" output="screen" />
+    <node pkg="exporobot_assignment1" type="user_interface.py" name="user_interface" output="screen" />
+
+</launch>
