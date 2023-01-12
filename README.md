@@ -77,11 +77,11 @@ The oracle node itself used the '/armor_interface_srv' sevice which is hosted by
 
 ## Project Simulation Demo:
 
-https://user-images.githubusercontent.com/77781922/211923218-f37aa19b-6057-4bce-9ea4-b1fd14927915.MOV
+https://user-images.githubusercontent.com/77781922/212022607-f7deb852-19cb-4abc-b40a-392327f2703c.mp4
 
 ## Code Documentation:
 
-The code documentation is done using tools Doxygen  In the **main** branch the doxygen documentation can be found under the name of dconfig.
+The code documentation is done using tools Doxygen  In the *main* branch the doxygen documentation can be found under the name of dconfig.
 ## Contant Info: 
 1. Author: ELham Mohammadi
 2. Email: Elham.mohammadi20154@gmail.com
