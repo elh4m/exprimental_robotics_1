@@ -60,7 +60,10 @@ The project architecture is consist of four python nodes.
 ![experimental_robotics_assignment1](https://user-images.githubusercontent.com/61094879/142053996-5c6eaebb-67bb-4f27-918d-5f2c659b772f.jpg)
 
 'user_interface.py' node communicates with the user and as per the provided commands, instruct the system to behave accordingly. If the user press 1 in the terminal, it request '/user interface' service which is hosted by 'motion_controller.py' node to start the robot simuation. Upon recieving the service request, motion_controller node starts the robot simulation in which robot visits Room1, Room2, and Room3 which have pre-defined coordinates(R1(2,0), R2(0,2), R3(-2,0)) in a X-Y axes grid. The robot starts the exploration from a predefined initial position P with coordinates (1,1).
-![robotmodel](https://user-images.githubusercontent.com/77781922/212032768-ff8a1757-9479-4c56-b603-85e004844729.jpg)
+
+
+<img width="347" alt="image_2023-01-12_10-49-21" src="https://user-images.githubusercontent.com/77781922/212034325-31b66d02-f34e-491a-afcc-a4b4450f9c93.png">
+
 
 After reaching in any room the robot request for the hint from the hint_generator node by calling the '/request_hint' service. The hint_generator node respond to this request by generating a random hint from predefined lists of hints.
 
