@@ -3,9 +3,9 @@
 ## @package exporobot_assignment1
 # \file hint_generator.py
 # \brief This file contains code for hint generator node.
-# \author Shozab Abidi
+# \author Elham Mohammadi
 # \version 1.0
-# \date 15/11/2021
+# \date 15.01.2023
 #
 # \details
 #
