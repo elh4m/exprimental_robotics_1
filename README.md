@@ -1,4 +1,3 @@
-# exprimentalLab_project1
 # Project 1 - Experimental Robotics (MSc Robotics Engineering, Unige)
 
 The following repository contains a ROS package for a toy simulation of Clauedo game in which a robot explore the environment for hints to find the killer. The environment in this project is an appartment with three rooms in which robot enter one by one to find hints. Based on the discovered hints robot deduces a hypotheses regarding the killer. The deduced hypotheses by robot has to be consistent and correct which means it has to be based on three different types of hints and belongs to set of predefined hypotheses which are considered as corrrect.
@@ -37,10 +36,6 @@ roscore&
 2. After that start the ARMOR service by using the following command:
 ```
 rosrun armor execute it.emarolab.armor.ARMORMainService
-if this command does not work or it is the first time you are using ARMOR please first run :
-roscd armor
-./gradlew deployApp
-it will not throw an error this time
 ```
 3. Open the new tab in command terminal and run the ROS package launch file to start the simulation by using the following command: 
 ```
@@ -61,8 +56,7 @@ The project architecture is consist of four python nodes.
 
 'user_interface.py' node communicates with the user and as per the provided commands, instruct the system to behave accordingly. If the user press 1 in the terminal, it request '/user interface' service which is hosted by 'motion_controller.py' node to start the robot simuation. Upon recieving the service request, motion_controller node starts the robot simulation in which robot visits Room1, Room2, and Room3 which have pre-defined coordinates(R1(2,0), R2(0,2), R3(-2,0)) in a X-Y axes grid. The robot starts the exploration from a predefined initial position P with coordinates (1,1).
 
-
-<img width="347" alt="image_2023-01-12_10-49-21" src="https://user-images.githubusercontent.com/77781922/212034325-31b66d02-f34e-491a-afcc-a4b4450f9c93.png">
+![environment](https://user-images.githubusercontent.com/61094879/142056609-ae997ab8-51cd-473c-baa9-7c9dc5c5c6d1.jpg)
 
 
 After reaching in any room the robot request for the hint from the hint_generator node by calling the '/request_hint' service. The hint_generator node respond to this request by generating a random hint from predefined lists of hints.
@@ -78,11 +72,13 @@ The oracle node itself used the '/armor_interface_srv' sevice which is hosted by
 
 ## Project Simulation Demo:
 
-https://user-images.githubusercontent.com/77781922/212033233-c2099e08-8070-413c-9d07-f818dd7bd8f6.mp4
+https://user-images.githubusercontent.com/61094879/142734090-305dbd75-fc06-49ff-b726-deb3692156a3.mp4
 
 ## Code Documentation:
 
-The code documentation is done using tools Doxygen  In the *main* branch the doxygen documentation can be found under the name of dconfig.
+The code documentation is done using tools Doxygen and Sphinx. In the **main** branch the doxygen documentation can be found and for sphinx there is second branch in this respository named **sphinx**. 
+
+
 ## Contant Info: 
 1. Author: ELham Mohammadi
 2. Email: Elham.mohammadi20154@gmail.com
