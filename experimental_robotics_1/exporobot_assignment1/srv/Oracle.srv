@@ -1,4 +1,0 @@
-string command
-string[] args
----
-bool res
