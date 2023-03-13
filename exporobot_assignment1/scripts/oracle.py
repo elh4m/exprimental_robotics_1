@@ -13,7 +13,13 @@
 # ° /armor_interface_srv
 # ° /oracle_service
 #  
-# This node waits for '/oracle_service' service request from the 'motion_controller' node. Based on the type of recieved request it loads the hint in the ARMOR reasonser, start the reasoner to deduced a hypotheses based on previously loaded hints and request ARMOR reasoner for the list of 'COMPLETE' hypotheses. If the recently deduced hypotheses is 'CONSISTENT' it respond with 'True' otherwise it respond with 'False'. Similarly if the hypotheses is 'CONSISTENT' then the user request this node to check if the hypotheses is also 'CORRECT'. A hypotheses correct if it is 'CONSISTENT' and belong to a predefined list of correct hypotheses in oracle node. If hypotheses is also correct then the node respond back with 'True' otherewise 'False'
+# This node waits for '/oracle_service' service request from the 'motion_controller' node. 
+# Based on the type of recieved request it loads the hint in the ARMOR reasonser, start the reasoner to deduced a hypotheses 
+# based on previously loaded hints and request ARMOR reasoner for the list of 'COMPLETE' hypotheses.
+# If the recently deduced hypotheses is 'CONSISTENT' it respond with 'True' otherwise it respond with 'False'. 
+# Similarly if the hypotheses is 'CONSISTENT' then the user request this node to check if the hypotheses is also 'CORRECT'. 
+# A hypotheses correct if it is 'CONSISTENT' and belong to a predefined list of correct hypotheses in oracle node. 
+# If hypotheses is also correct then the node respond back with 'True' otherewise 'False'
 #
 
 import rospy
